@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Galeria Imagens de Times 3D</title>
+
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+</head>
+<body>
+
+    <h1>Clique no time para saber mais informações</h1>
+
+    <div class="caixa">
+    <span style="--i:1;">
+
+        <img src="time1.jpg" alt="Time 1" onclick="abrirImagem('time1.jpg','Este time é o Vitória, foi fundando em Salvador BA')">
+
+        <p>Vitoria FC</p>
+
+    </span>
+
+    <span style="--i:2;">
+
+        <img src="time2.jpg" alt="Time 2" onclick="abrirImagem('time2.jpg','Este time é o Ceará, foi fundando em Fortaleza CE')">
+
+        <p>Ceará FC</p>
+
+    </span>
+
+    <span style="--i:3;">
+
+        <img src="time3.jpg" alt="Time 3" onclick="abrirImagem('time3.jpg','Este time é o Náutico, foi fundando em Recife PE')">
+
+        <p>Náutico FC</p>
+
+    </span>
+
+    <span style="--i:4;">
+
+        <img src="time4.jpg" alt="Time 4" onclick="abrirImagem('time4.jpg','Este time é o Santa Cruz, foi fundando em Recife PE')">
+
+        <p>Santa Cruz FC</p>
+
+    </span>
+
+    <span style="--i:5;">
+
+        <img src="time5.jpg" alt="Time 5" onclick="abrirImagem('time5.jpg','Este time é o Sport, foi fundando em Recife PE')">
+
+        <p>Sport FC</p>
+
+    </span>
+
+    <span style="--i:6;">
+
+        <img src="time6.jpg" alt="Time 6" onclick="abrirImagem('time6.jpg','Este time é o Bahia, foi fundando em Salvador BA')">
+
+        <p>Bahia FC</p>
+
+    </span>
+
+    <span style="--i:7;">
+
+        <img src="time7.jpg" alt="Time 7" onclick="abrirImagem('time7.jpg','Este time é o CRB, foi fundando em Maceio AL')">
+
+        <p>CRB FC</p>
+
+    </span>
+
+    <span style="--i:8;">
+
+        <img src="time8.jpg" alt="Time 8" onclick="abrirImagem('time8.jpg','Este time é o Sampaio Correa, foi fundando no São Luiz MA')">
+
+        <p>Samapaio Correa FC</p>
+
+    </span>
+
+    <span style="--i:9;">
+
+        <img src="time9.jpg" alt="Time 9" onclick="abrirImagem('time9.jpg','Este time é o ABC, foi fundando em Natal RN')">
+
+        <p>ABC FC</p>
+
+    </span>
+
+    <span style="--i:10;">
+
+        <img src="time10.jpg" alt="Time 10" onclick="abrirImagem('time10.jpg','Este time é o América, foi fundando em Natal RN')">
+
+        <p>América FC</p>
+
+    </span>
+
+    <span style="--i:11;">
+
+        <img src="time11.jpg" alt="Time 11" onclick="abrirImagem('time11.jpg','Este time é o CSA, foi fundando em Macéio Al')">
+
+        <p>CSA FC</p>
+
+    </span>
+
+    <span style="--i:12;">
+
+        <img src="time12.jpg" alt="Time 12" onclick="abrirImagem('time12.jpg','Este time é o Campinense, foi fundando em Campina Grande BA')">
+
+        <p>Campinense FC</p>
+
+    </span>
+</div>
+
+    <script>
+
+    function abrirImagem(imagem, descricao) {
+
+        let url = `imagem.html?imagem=${imagem}&descricao=${encodeURIComponent(descricao)}`;
+
+        window.open(url, '_blank');
+        
+    }        
+
+    </script>
+</body>
+</html>
